@@ -1,7 +1,7 @@
 /* SECTION BACKGROUND */
 .expert-section {
   background: #050505;
-  padding: 5rem 2rem;
+  padding: 5rem 2rem;margin-top: 40px;
 }
 
 /* OUTER GLASS FRAME (this is the key) */
@@ -615,6 +615,7 @@
 @media (max-width: 768px) {
   .expert-section {
     padding: 3rem 1.2rem;
+    margin-top: 70px;
   }
 
   .expert-frame {
