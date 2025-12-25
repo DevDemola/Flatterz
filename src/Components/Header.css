@@ -1,14 +1,11 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 .header {
   width: 100%;
   background: #0b0b0b;
   padding: 1.2rem 1.5rem;
-  position: static;
+  position: fixed; /* ✅ CHANGED from static */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* ✅ ensures header stays on top */
 }
 
 .nav-container {
@@ -83,7 +80,7 @@
 
   .nav {
     position: absolute;
-    top: 70px;
+    top: 85px; /* ✅ adjusted for fixed header height */
     right: 0;
     width: 100%;
     flex-direction: column;
